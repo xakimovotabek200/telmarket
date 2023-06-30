@@ -1,6 +1,10 @@
 import { Carousel } from '@mantine/carousel';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
+import Image from 'next/image';
+import S22 from "./s22.webp"
+import Phone from "./PHONE.jpg"
+import Xiami from "./xiami.jpg"
 
 function Slide() {
     const autoplay = useRef(Autoplay({ delay: 2500 }));
@@ -16,10 +20,15 @@ function Slide() {
             onMouseEnter={autoplay.current.stop}
             onMouseLeave={autoplay.current.reset}
         >
-            <Carousel.Slide>1</Carousel.Slide>
-            <Carousel.Slide>2</Carousel.Slide>
-            <Carousel.Slide>3</Carousel.Slide>
-            {/* ...other slides */}
+            <Carousel.Slide>
+                <Image src={Phone} />
+            </Carousel.Slide>
+            <Carousel.Slide>
+                <Image src={S22} />
+            </Carousel.Slide>
+            <Carousel.Slide>
+                <Image src={Xiami} />
+            </Carousel.Slide>
         </Carousel>
     );
 }
