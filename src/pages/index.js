@@ -1,10 +1,11 @@
-import Image from 'next/image'
+
+import ArticlesCardsGrid from '@/components/card/CardPhone'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <h1>Hello telfon market</h1>
+    <><ArticlesCardsGrid /></>
   )
 }
