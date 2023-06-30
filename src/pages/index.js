@@ -1,10 +1,12 @@
 import Footer from '@/components/Footer/Footer'
-import { Inter } from 'next/font/google'
+import Slide from '@/components/HomeSlider/Slide'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <Footer />
+    <>
+      <Slide />
+      <Footer />
+    </>
   )
 }
