@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
-function Applayout() {
+function Applayout({ children }) {
     return (
-        <div>Applayout</div>
+        <div>
+            <Navbar />
+            {children}
+        </div>
     )
 }
 
